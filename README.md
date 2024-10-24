@@ -2,7 +2,7 @@ Base Program: HB_Radar
 Basic Principle: Finds hydrogen bonds (H-bonds) from X-ray Crystal structures and calculates Potential Energy Surface using Density Functional Theory.  
 >Working protocol:  
 >Harvest .pdb files from RCSB-PDB   
->Adds hydrogen to eah pdb and outputs .atom file  
+>Adds hydrogen to each pdb and outputs .atom file  
 >Searches each file and harvest coordinates involved in H-bond formation (updated version can isolate nearby coordinates of H-bond, given certain radius).  
 >Uses NWChem program as a wrapper to calculate QM single point energy (SPE).   
 >Writes Fortran scripts independently to run NWChem as a sub-process and returns the value to specific array once a SPE calculation finishes.  
