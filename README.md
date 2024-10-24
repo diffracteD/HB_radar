@@ -1,4 +1,4 @@
-Base Program Name HB_Radar  
+Base Program: HB_Radar  
 Basic Principle: Finds hydrogen bonds (H-bonds) from X-ray Crystal structures and calculates Potential Energy Surface using Density Functional Theory.  
 >Working protocol:  
 >Harvest .pdb files from RCSB-PDB   
