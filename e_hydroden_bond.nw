@@ -1,0 +1,29 @@
+title 'hydrogen_bond_energy'
+start dimer
+geometry units angstrom
+  #symmetry c1
+  N##
+end
+basis "ao basis"
+  N library aug-cc-pVDZ
+  H library aug-cc-pVDZ
+  O library aug-cc-pVDZ
+  C library aug-cc-pVDZ
+  bqN library N aug-cc-pVDZ
+  bqH library H aug-cc-pVDZ
+  bqO library O aug-cc-pVDZ
+  bqC library C aug-cc-pVDZ
+end
+#dft; grid fine; convergence energy 1e-08; xc b3lyp; mult 1; end
+dft 
+  xc mp2
+  direct
+  convergence energy 1e-8
+  iterations 100
+ end
+
+bsse
+  mon first 1 2
+  mon second 3 4
+end
+task dft energy
